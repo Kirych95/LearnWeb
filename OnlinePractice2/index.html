@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание №2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Форма заявки на работу в зоопарке</h1>
+    <p><i>Пожалуйста, заполните форму. Обязательные поля помечены <span class="red-star">*</span></i></p>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <div>
+                <label for="name">Имя<span class="red-star">*</span></label>
+                <input type="text" id="name" placeholder="Введите имя" required>
+            </div>
+            <div>
+                <label for="surname">Телефон</label>
+                <input type="tel" id="tel" placeholder="Введите телефон">
+            </div>
+            <div>
+                <label for="email">Email<span class="red-star">*</span></label>
+                <input type="email" id="email" placeholder="Введите свой email" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Персональная информация</legend>
+            <div>
+                <label for="age">Возраст<span class="red-star">*</span></label>
+                <input type="number" min="0" max="10" id="age" placeholder="Введите возраст" required>
+            </div>
+            <div>
+                <label for="gender">Пол</label>
+                <select id="gender">
+                    <option value="">Женщина</option>
+                    <option value="">Мужчина</option>
+                </select>
+            </div>
+            <div>
+                <label for="personal">Перечислите личные качества</label>
+                <textarea id="personal" placeholder="Перечислите личные качества"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Выберите ваших любимых животных</legend>
+            <div>
+                <label for="zebra">
+                    <input id="zebra" type="checkbox" name="">
+                    <span>Зебра</span>
+                </label>
+                <label for="cat">
+                    <input type="checkbox" name="" id="cat">
+                    <span>Кошка</span>
+                </label>
+                <label for="anaconda">
+                    <input type="checkbox" name="" id="anaconda">
+                    <span>Анаконда</span>
+                </label>
+                <label for="man">
+                    <input type="checkbox" name="" id="man">
+                    <span>Человек</span>
+                </label>
+            </div>
+        </fieldset>
+
+        <button>Отправить информацию</button>
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    background: lightgray;
+    width: max-content;
+    padding-bottom: 24px;
+    transition: 0.5s;
+    display: inline-block;
+    margin: 20px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card h3{
+    margin: 8px;
+    font-size: 22px;
+}
+
+.card .info{
+    margin: 8px;
+    color: gray;
+} 
+
+.card .price{
+    margin: 8px;
+    font-weight: bold;
+}
+
+.card .old-price{
+    margin-left: 8px;
+    font-size: 14px;
+    color: darkgray;
+    text-decoration: line-through;
+}
