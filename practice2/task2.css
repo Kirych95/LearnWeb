@@ -1,0 +1,103 @@
+* {
+    font-family: Arial sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    margin: 10px;
+    max-width: 40px;
+}
+
+#back:hover {
+    transition: opacity 0.3s;
+    opacity: 0.5;
+}
+
+#back:active{
+    transform: scale(0.85);
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+#favourite {
+    cursor: pointer;
+    font-size: 1.9em;
+    float: inline-end;
+}
+
+#favourite:hover {
+    transition: opacity 0.3s;
+    opacity: 0.7;
+}
+
+#favourite:active {
+    transform: scale(0.85);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card p {
+    margin: 10px 0px;
+    font-size: 18px;
+    text-indent: 10px;
+    text-align: justify;
+}
+
+.money {
+    text-align: center;
+}
+
+.price {
+    color: #e74c3c;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sale {
+    text-decoration: line-through;
+    color: #2c3e50;
+    margin-left: 10px;
+}
+
+.card button {
+    border-radius: 5px;
+    background: linear-gradient(135deg, rgb(255, 160, 44), rgb(72, 177, 72), rgb(73, 70, 255));
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 20px;
+    border-style: none;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 0px;
+}
+
+.card button:active {
+    transform: scale(0.95);
+}
+
+.card button:hover {
+    transition: opacity 0.3s;
+    opacity: 0.8;
+}
