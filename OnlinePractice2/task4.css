@@ -1,0 +1,77 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #201F1F;
+    color: white;
+    padding: 20px 60px;
+}
+
+header {
+    color: #EE5626;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+header * {
+    vertical-align: middle;
+}
+
+header span {
+    margin-left: 10px;
+}
+
+main {
+    max-width: 500px;
+    width: 100%;
+    margin: 25px auto;
+    border-style: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+
+}
+
+.author {
+    width: max-content;
+    margin: 20px auto;
+}
+
+.author * {
+    vertical-align: middle;
+}
+
+.author figcaption {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.author-name {
+    background: linear-gradient(#EE5626, #35109F);
+    -webkit-text-fill-color: transparent;
+    /*фон прозрачен */
+    -webkit-background-clip: text;
+    /* только градиент от заднего фона */
+    background-clip: text;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 8px;
+}
+
+footer {
+    text-align: center;
+}
+
+.orange {
+    color: #EE5626;
+}
