@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body, button{
+    font-family: "Rubik", sans-serif;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+}
+
+.header-main{
+    padding: 15px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+
+.header-main-logo{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+}
+
+.catalog-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    background: #70C05B;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.catalog-btn span{
+    padding: 0 10px;
+}
+
+.header-main-links{
+    display: flex;
+    gap: 30px;
+}
+
+.header-main-links a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+    gap: 5px;
+}
+
+.header-additional{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background: white;
+    width: 100%;
+    padding: 60px;
+    /* скроем за пределами окна всплывающее меню */
+    position: fixed;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, .5);
+    transition: 0.5s;
+}
+
+.header-additional-links{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 270px;
+}
+
+.header-additional-links a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.header-additional-links a:hover{
+    color: #FF6633;
+}

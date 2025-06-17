@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <section class="header-main">
+            <div class="header-main-logo">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="">
+                    <span>Северяночка</span>
+                </a>
+                <button class="catalog-btn">
+                    <img src="images/icons/menu.svg" alt="">
+                    <span>Каталог</span>
+                </button>
+            </div>
+            <div class="header-main-links">
+                <a href="">
+                    <img src="images/icons/favorite.svg" alt="">
+                    <span>Избранное</span>
+                </a>
+                <a href="">
+                    <img src="images/icons/order.svg" alt="">
+                    <span>Заказы</span>
+                </a>
+                <a href="">
+                    <img src="images/icons/basket.svg" alt="">
+                    <span>Корзина</span>
+                </a>
+            </div>
+        </section>
+        <section style="top: -500px;" class="header-additional">
+            <ul class="header-additional-links">
+                <li><a href="#">Категория</a></li>
+                <li><a href="#">Категория</a></li>
+                <li><a href="#">Категория</a></li>
+                <li><a href="#">Категория</a></li>
+            </ul>
+            <ul class="header-additional-links">
+                <li><a href="#">Категория</a></li>
+                <li><a href="#">Категория</a></li>
+                <li><a href="#">Категория</a></li>
+                <li><a href="#">Категория</a></li>
+            </ul>
+            <ul class="header-additional-links">
+                <li><a href="#">Категория</a></li>
+                <li><a href="#">Категория</a></li>
+                <li><a href="#">Категория</a></li>
+                <li><a href="#">Категория</a></li>
+            </ul>
+            <ul class="header-additional-links">
+                <li><a href="#">Категория</a></li>
+                <li><a href="#">Категория</a></li>
+                <li><a href="#">Категория</a></li>
+                <li><a href="#">Категория</a></li>
+            </ul>
+        </section>
+    </header>
+
+    <script>
+        const btn = document.querySelector(".catalog-btn")
+        const links = document.querySelector(".header-additional")
+        btn.addEventListener("click", () => {
+            if (links.style.top == "-500px"){
+                links.style.top = "73px"
+            } else {
+                links.style.top = "-500px"
+            }
+        })
+    </script>
+
+</body>
+
+</html>
