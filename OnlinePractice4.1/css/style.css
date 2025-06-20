@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+}
+
+header{
+    height: 1024px;
+    background: url(../images/Background.png);
+}
+
+header button{
+    color: white;
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: max-content;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.header-menu {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.header-menu nav{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.burger-menu {
+    display: none;
+    border: none;
+}
+
+
+.header-hero{
+    padding: 200px 60px 0px;
+    color: white;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 72px;
+    max-width: 800px;
+    line-height: 1.5;
+    font-family: serif;
+}
+
+.line{
+    width: 100px;
+    border: 6px white solid;
+}
+
+/* Отображение и скрытие элементов по ширине экрана */
+@media screen and (max-width: 500px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .header-menu nav {
+        display: none;
+    }
+}
