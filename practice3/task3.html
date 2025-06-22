@@ -12,12 +12,10 @@
 <body>
     <header>
         <section class="header-main">
-            <div class="header-main-logo">
-                <a href="../index.html" class="logo">
-                    <img src="images/logo.png" alt="">
-                </a>
-            </div>
-            <div class="header-main-links">
+            <a href="../index.html" title="Переход в список заданий" class="logo">
+                <img src="images/logo2.png" alt="BerryZon">
+            </a>
+            <nav class="header-main-links">
                 <a href="#">
                     <img src="images/icons/favorite.svg" alt="">
                     <span>Избранное</span>
@@ -30,15 +28,89 @@
                     <img src="images/icons/shopping_cart.svg" alt="">
                     <span>Корзина</span>
                 </a>
-                <button class="login">
+                <button>
                     <img src="images/icons/login.svg" alt="">
                     <span>Войти</span>
                 </button>
-            </div>
-
+            </nav>
         </section>
     </header>
-    
+
+    <main>
+        <section class="hero-card">
+            <img src="images/lucky.png" alt="Lucky with beer">
+            <div class="hero-card-description">
+                <h1>MSI Lucky Beer Edition</h1>
+                <h2>Артикул: 376342003735</h2>
+                <p class="hero-card-price">29 490 ₽<span>45 590 ₽</span></p>
+                <p class="hero-card-about">Редкая коллекционная статуэтка "MSI Around The World Series"</p>
+                <button>Добавить в корзину</button>
+                <p class="hero-card-additional">В наличии: осталось 1 шт.</p>
+            </div>
+        </section>
+
+        <section class="other-products">
+            <h2>Другая продукция MSI:</h2>
+            <div class="product-cards">
+                <figure class="product-card">
+                    <img src="images/5070titrio.png" alt="5070titrio">
+                    <figcaption>
+                        <h3>MSI GeForce RTX 5070 Ti GAMING TRIO OC</h3>
+                        <p class="product-card-about">PCIe 5.0 16 ГБ GDDR7, 256 бит, 3 x DisplayPort, HDMI, GPU 2300 МГц</p>
+                        <p class="product-card-price">97 599 ₽<span id="card-one">105 499 ₽</span></p>
+                    </figcaption>
+                </figure>
+                <figure class="product-card">
+                    <img src="images/5070vanguard.png" alt="5070vanguard">
+                    <figcaption>
+                        <h3>MSI GeForce RTX 5070 VANGUARD SOC LAUNCH EDITION</h3>
+                        <p class="product-card-about">PCIe 5.0 12 ГБ GDDR7, 192 бит, 3 x DisplayPort, HDMI, GPU 2330 МГц</p>
+                        <p class="product-card-price">76 999 ₽<span id="card-two">86 999 ₽</span></p>
+                    </figcaption>
+                </figure>
+                <figure class="product-card">
+                    <img src="images/5080inspire.png" alt="5080inspire">
+                    <figcaption>
+                        <h3>MSI GeForce RTX 5080 INSPIRE 3X OC</h3>
+                        <p class="product-card-about">PCIe 5.0 16 ГБ GDDR7, 256 бит, 3 x DisplayPort, HDMI, GPU 2300 МГц</p>
+                        <p class="product-card-price"><span id="card-three">144 999 ₽</span></p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <h2>BerryZon - Всегда вкусные цены!</h2>
+            <div class="social-media">
+                <a href="#"><img src="images/icons/vk.svg" title="ВКонтакте" alt="ВКонтакте"></a>
+                <a href="#"><img src="images/icons/tg.svg" title="Телеграм" alt="Телеграм"></a>
+                <a href="#"><img src="images/icons/ds.svg" title="Дискорд" alt="Дискорд"></a>
+                <a href="#"><img src="images/icons/ws.svg" title="WhatsApp" alt="WhatsApp"></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <ul class="footer-links-list">
+                <h3>О компании</h3>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Партнерам</a></li>
+                <li><a href="#">Вакансии</a></li>
+            </ul>
+            <ul class="footer-links-list">
+                <h3>Покупателям</h3>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Статус заказа</a></li>
+                <li><a href="#">Кредиты</a></li>
+            </ul>
+            <ul class="footer-links-list">
+                <h3>Помощь</h3>
+                <li><a href="#">Как оформить заказ</a></li>
+                <li><a href="#">Способы оплаты</a></li>
+                <li><a href="#">Обмен, возврат, гарантия</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
