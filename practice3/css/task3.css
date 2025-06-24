@@ -1,72 +1,215 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
-*{
+* {
     box-sizing: border-box;
 }
-body, button{
-    font-family: "Rubik", sans-serif;
+
+body {
+    font-family: "Inter", sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 36px 80px;
 }
 
-header{
+header {
+    display: flex;
+    justify-content: center;
     position: sticky;
     top: 0px;
 }
 
-.header-main{
-    padding: 15px 50px;
+.header-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
-    background: rgb(102, 202, 102);
+    background: white;
     position: sticky;
     top: 0px;
     width: 100%;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, .5);
-    z-index: 1;
+    padding-top: 20px;
 }
 
-.header-main-logo{
+.header-main-links {
     display: flex;
     gap: 30px;
     align-items: center;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    width: 200px;
-}
-
-.header-main-links{
-    display: flex;
-    gap: 30px;
-}
-
-.header-main-links a{
-    width: 50px;
-    height: 50px;
+.header-main-links a {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: black;
     font-size: 16px;
+    font-weight: 500;
     text-decoration: none;
     gap: 5px;
+    line-height: 150%;
 }
 
-.login{
+.header-main-links img {
+    width: 30px;
+}
+
+.header-main button {
     display: flex;
     align-items: center;
-    gap: 10px;
-    color: black;
+    color: white;
     background: #70C05B;
     border: none;
-    padding: 8px;
+    padding: 10px 56px;
+    gap: 10px;
     border-radius: 10px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.login span{
-    padding: 0 10px;
+.hero-card {
+    margin: 56px 0px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-card img {
+    max-width: 600px;
+    max-height: 600px;
+    border-radius: 10px;
+}
+
+.hero-card-description {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 515px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.hero-card-description h2,
+.hero-card-price,
+.other-products h2, .footer-info h2 {
+    font-size: 24px;
+    line-height: 150%;
+    color: #818181
+}
+
+.hero-card-price span,
+.product-card-price span {
+    text-decoration: line-through;
+    font-size: 15px;
+    color: red;
+    margin-left: 15px;
+}
+
+.hero-card-price,
+.product-card-price {
+    color: green;
+}
+
+.hero-card-about,
+.hero-card-additional,
+.product-card figcaption {
+    color: #818181;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.hero-card button {
+    background: darkorange;
+    color: white;
+    width: 99px;
+    height: 52px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    width: unset;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.other-products h2,
+.product-card h3, .footer-info h2 {
+    color: black;
+}
+
+.product-cards {
+    margin: 24px 0px 120px;
+    display: flex;
+    gap: 32px;
+}
+
+.product-cards img {
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 10px;
+}
+
+.product-card figcaption {
+    margin-top: 24px;
+}
+
+#card-three {
+    font: inherit;
+    color: black;
+    text-decoration: none;
+    margin-left: 0;
+} /* Думаю условие, если нет скидки, то цена обычная чёрная, можно будет сделать, когда изучим JS, а пока отдельно прописываю */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e6e6e6;
+    padding: 48px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 32px;
+}
+
+.footer-links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 180px;
+}
+
+.footer-links-list h3 {
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.footer-links-list a {
+    font-weight: 500;
+    line-height: 150%;
+    color: #454545;
+    text-decoration: none;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.social-media img {
+    max-width: 40px;
+}
+
+.social-media img:hover, .hero-card button:hover, .header-main button:hover {
+    filter: brightness(80%);
 }
