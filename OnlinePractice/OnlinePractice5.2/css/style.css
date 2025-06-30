@@ -1,4 +1,17 @@
+:root{
+    --bg-color: white;
+    --contrast-color: darkgreen;
+    --text-color: #333;
+}
+
+.dark-theme{
+    --bg-color: #333;
+    --contrast-color: darkcyan;
+    --text-color: white;
+}
+
 body {
+    background: var(--bg-color);
     margin: 8px;
     font-family: sans-serif;
 }
@@ -13,7 +26,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: darkgreen;
+    background: var(--contrast-color);
     color: white;
 }
 
@@ -33,11 +46,20 @@ body {
 .accordeon-body {
     padding: 0px 20px;
     height: 0px;
-    transition: 0.5s;
+    transition: height 0.5s;
     overflow: hidden;
+    color: var(--text-color);
 }
 
 .accordeon-body-open {
     height: unset;
     padding: 20px;
+}
+
+#change-theme{
+    margin: 20px 0px;
+    pad: 10px 20px;
+    background: var(--contrast-color);
+    color: white;
+    cursor: pointer;
 }
