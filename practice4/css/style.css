@@ -39,7 +39,8 @@ nav a {
     font-size: 20px;
 }
 
-nav a:hover, .lang span:hover {
+nav a:hover,
+.lang span:hover {
     color: rgb(190, 121, 42);
     cursor: pointer;
 }
@@ -307,11 +308,16 @@ footer {
 .footer-policy a {
     color: white;
     font-weight: 100;
+    font-size: 13px;
 }
 
 .rights {
     font-weight: 100;
     opacity: 0.5;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 992px) {
