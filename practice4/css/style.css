@@ -297,6 +297,10 @@ footer {
     max-width: 30px;
 }
 
+.footer-social-media a:hover {
+    filter: brightness(80%);
+}
+
 .footer-policy {
     display: flex;
     align-items: center;
