@@ -1,0 +1,43 @@
+body {
+    margin: 8px;
+    font-family: sans-serif;
+}
+
+.accordeon {
+    border: 1px solid black;
+    max-width: 600px;
+}
+
+.accordeon-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: darkgreen;
+    color: white;
+}
+
+.accordeon-btn {
+    background: transparent;
+    border: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.accordeon-btn-open {
+    transform: rotateZ(180deg);
+}
+
+.accordeon-body {
+    padding: 0px 20px;
+    height: 0px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.accordeon-body-open {
+    height: unset;
+    padding: 20px;
+}
