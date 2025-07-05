@@ -37,3 +37,14 @@ body {
 .gallery-pictures img:hover {
     filter: grayscale(0);
 }
+
+@media screen and (max-width: 1140px) {
+    .gallery-pictures {
+        height: 50%;
+    }
+}
+@media screen and (max-width: 540px) {
+    .gallery-pictures {
+        height: 30%;
+    }
+}
