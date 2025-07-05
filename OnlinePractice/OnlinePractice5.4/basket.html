@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        let basket = JSON.parse(localStorage.getItem("basket")) || []
+        if (basket != undefined){
+            generateCards()
+        }
+        function generateCards() {
+            for (let card of basket) {
+                document.body.innerHTML += generateCardHTML(card)
+            }
+        }
+        function generateCardHTML(card) {
+            return `
+        <div class='card'>
+            <img src=${card.imageURL}>
+            <h3>${card.name}</h3>
+            <p>${card.price * 79}</p>
+        </div>
+    `
+        }
+    </script>
+
+
+</body>
+
+</html>
