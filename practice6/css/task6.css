@@ -38,13 +38,20 @@ body {
     filter: grayscale(0);
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and ((max-width: 1140px) or (max-height: 772px)) {
     .gallery-pictures {
         height: 50%;
     }
 }
+
 @media screen and (max-width: 540px) {
     .gallery-pictures {
         height: 30%;
+    }
+}
+
+@media screen and (max-height: 992px) {
+    .gallery-pictures {
+        height: 90%;
     }
 }
