@@ -5,20 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+    <!-- 
+        Очистить корзину
+        Удалить определенный элемент
+        Итоговая сумма
+        Оплатить
+    -->
 
 
+    <h1 id="sum"></h1>
+    <section id="basket-block">
+    </section>
     <script>
+        const basketBlock = document.querySelector("#basket-block")
+        const sumBlock = document.querySelector("#sum")
         let basket = JSON.parse(localStorage.getItem("basket")) || []
-        if (basket != undefined){
+        if (basket != undefined) {
             generateCards()
+            sum()
         }
-        function generateCards() {
+        function sum() {
+            let s = 0
             for (let card of basket) {
-                document.body.innerHTML += generateCardHTML(card)
+                s += card.price * 79
+            }
+            sumBlock.innerHTML = "Итого: " + s + " руб."
+        }
+
+        function generateCards() {
+            basketBlock.innerHTML = ""
+            for (let card of basket) {
+                basketBlock.innerHTML += generateCardHTML(card)
             }
         }
         function generateCardHTML(card) {
@@ -30,6 +53,14 @@
         </div>
     `
         }
+
+        setInterval(() => {
+            basket = JSON.parse(localStorage.getItem("basket")) || []
+            generateCards()
+            sum()
+        }, 5000)
+
+
     </script>
 
 
