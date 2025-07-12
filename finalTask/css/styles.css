@@ -431,13 +431,6 @@ ul {
     text-align: center;
 }
 
-.contacts__map {
-    height: 400px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-}
-
 .social-links {
     display: flex;
     gap: 15px;

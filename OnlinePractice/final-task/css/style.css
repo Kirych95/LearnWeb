@@ -115,7 +115,7 @@ header {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 120px auto;
 }
 
 .guide-trails__header, .our-services__header {
@@ -138,6 +138,7 @@ header {
 
 .guide__card figure{
     display: flex;
+    flex-wrap: wrap;
     gap: 18px;
     align-items: center;
 }
