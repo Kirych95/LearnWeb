@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>МастерХост</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="images/icons/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
@@ -17,17 +17,26 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#" class="logo">Название<span>сайта</span></a>
+                <a href="index.html" class="logo">Мастер<span>Хост</span></a>
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link">ссылка 1</a></li>
-                        <li class="nav__item"><a href="#menu" class="nav__link">ссылка 2</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">ссылка 3</a></li>
-                        <li class="nav__item"><a href="#reviews" class="nav__link">ссылка 4</a></li>
-                        <li class="nav__item"><a href="#contacts" class="nav__link">ссылка 5</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Преимущества</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Аренда сервера</a></li>
+                        <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
+                        <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
                     </ul>
                 </nav>
-                <button class="menu-toggle" aria-label="Меню">
+
+                <nav id="burger-menu" class="burger-menu">
+                    <a href="#">Главная</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">О нас</a>
+                    <a href="#">Контакты</a>
+                    <button id="burger-menu-close">Свернуть</button>
+                </nav>
+
+                <button class="menu-toggle" aria-label="Меню" id="burger-menu-btn">
                     <span class="menu-toggle__line"></span>
                     <span class="menu-toggle__line"></span>
                     <span class="menu-toggle__line"></span>
@@ -52,11 +61,11 @@
             <div class="container">
                 <div class="about__inner">
                     <div class="about__image">
-                        <img src="..." alt="">
+                        <img src="images/best/best1.svg" alt="">
                     </div>
                     <div class="about__content">
-                        <h2 class="section-title">Заголовок 2 уровня</h2>
-                        <p class="about__text">Описание сайта</p>
+                        <h2 class="section-title">Perfect Places</h2>
+                        <p class="about__text">Шикарный выбор локаций – лучшие серверы в надежных дата-центрах</p>
                         <p class="about__text">Описание сайта</p>
                         <ul class="about__features">
                             <li class="feature-item">
@@ -79,10 +88,13 @@
 
         <section id="menu" class="menu">
             <div class="container">
-                <h2 class="section-title">Карточки</h2>
+                <h2 class="section-title">Аренда сервера</h2>
                 <div class="menu__content active" id="coffee">
                     <div class="menu__grid">
                         <div class="menu-item">
+                            <div class="menu-item__country">
+                                <img src="images/countries/belgium.svg" alt="">
+                            </div>
                             <div class="menu-item__header">
                                 <h3 class="menu-item__title">Карточка №1</h3>
                                 <span class="menu-item__price">цена или доп.инфо</span>
@@ -144,8 +156,7 @@
                         </div>
                         <p class="review__text">Текст отзыва</p>
                         <div class="review__author">
-                            <img src="Вставьте фото" alt=""
-                                class="review__photo">
+                            <img src="Вставьте фото" alt="" class="review__photo">
                             <span class="review__name">Имя</span>
                         </div>
                     </div>
@@ -159,8 +170,7 @@
                         </div>
                         <p class="review__text">Текст отзыва</p>
                         <div class="review__author">
-                            <img src="Вставьте фото" alt=""
-                                class="review__photo">
+                            <img src="Вставьте фото" alt="" class="review__photo">
                             <span class="review__name">Имя</span>
                         </div>
                     </div>
@@ -174,8 +184,7 @@
                         </div>
                         <p class="review__text">Текст отзыва</p>
                         <div class="review__author">
-                            <img src="Вставьте фото" alt=""
-                                class="review__photo">
+                            <img src="Вставьте фото" alt="" class="review__photo">
                             <span class="review__name">Имя</span>
                         </div>
                     </div>
@@ -211,6 +220,10 @@
                                     class="fab fa-telegram-plane"></i></a>
                         </div>
                     </div>
+                    <div class="contacts__map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=39.890212%2C59.215025&z=18.8" width="560"
+                            height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                    </div>
                 </div>
             </div>
         </section>
@@ -220,8 +233,8 @@
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__logo">
-                    <a href="#" class="logo">Название<span>сайта</span></a>
-                    <p class="footer__text">Подзаголовок сайта</p>
+                    <a href="#" class="logo">Мастер<span>Хост</span></a>
+                    <p class="footer__text">Глобальное присутствие. Локальное доверие.</p>
                 </div>
                 <div class="footer__nav">
                     <h3 class="footer__title">Навигация</h3>
@@ -243,12 +256,12 @@
                 </div>
             </div>
             <div class="footer__bottom">
-                <p class="footer__copyright">© Copyright</p>
+                <p class="footer__copyright">© Copyright by Kirych</p>
             </div>
         </div>
     </footer>
 
-
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
