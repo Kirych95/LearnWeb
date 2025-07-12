@@ -4,7 +4,7 @@ const burgerMenu = document.querySelector("#burger-menu")
 const burgerMenuClose = document.querySelector("#burger-menu-close")
 
 burgerMenuBtn.addEventListener("click", () => {
-    burgerMenu.classList.add("burger-menu-open")
+    burgerMenu.classList.toggle("burger-menu-open")
 })
 
 burgerMenuClose.addEventListener("click", () => {
