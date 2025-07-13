@@ -379,7 +379,7 @@ figcaption h2 {
 
 .rent-item {
     background-color: var(--light-color);
-    padding: 25px;
+    padding: 20px;
     border-radius: 8px;
     transition: var(--transition);
 }
@@ -422,6 +422,26 @@ figcaption h2 {
 .rent-item__description {
     color: var(--gray-color);
     font-size: 1rem;
+}
+
+.rent-item__button {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px 0px;
+}
+
+.rent__button {
+    all: unset;
+    font-size: 1.1rem;
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rent-item__button:hover {
+    opacity: 0.7;
 }
 
 /* Отзывы */
