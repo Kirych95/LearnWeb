@@ -11,7 +11,7 @@ burgerMenuClose.addEventListener("click", () => {
     burgerMenu.classList.remove("burger-menu-open")
 })
 
-/* Переход по ссылкам навигации */
+/* Переход по ссылкам основной навигации */
 const navLinks = document.querySelectorAll("nav a")
 navLinks[0].addEventListener("click", (e) => {
     e.preventDefault()
@@ -37,4 +37,36 @@ navLinks[4].addEventListener("click", (e) => {
     e.preventDefault()
     const element = document.querySelector("#contacts")
     element.scrollIntoView({ behavior: "smooth" })
+})
+
+/* Переход по ссылкам навигации бургер-меню */
+navLinks[5].addEventListener("click", (e) => {
+    e.preventDefault()
+    const element = document.querySelector("#hero")
+    element.scrollIntoView({ behavior: "smooth" })
+    burgerMenu.classList.remove("burger-menu-open")
+})
+navLinks[6].addEventListener("click", (e) => {
+    e.preventDefault()
+    const element = document.querySelector("#about")
+    element.scrollIntoView({ behavior: "smooth" })
+    burgerMenu.classList.remove("burger-menu-open")
+})
+navLinks[7].addEventListener("click", (e) => {
+    e.preventDefault()
+    const element = document.querySelector("#menu")
+    element.scrollIntoView({ behavior: "smooth" })
+    burgerMenu.classList.remove("burger-menu-open")
+})
+navLinks[8].addEventListener("click", (e) => {
+    e.preventDefault()
+    const element = document.querySelector("#reviews")
+    element.scrollIntoView({ behavior: "smooth" })
+    burgerMenu.classList.remove("burger-menu-open")
+})
+navLinks[9].addEventListener("click", (e) => {
+    e.preventDefault()
+    const element = document.querySelector("#contacts")
+    element.scrollIntoView({ behavior: "smooth" })
+    burgerMenu.classList.remove("burger-menu-open")
 })
