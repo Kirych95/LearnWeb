@@ -3,7 +3,7 @@
 
 :root {
     --primary-color: #07bb43;
-    --primary-color-hover: #c05a1f;
+    --primary-color-hover: #cecb24;
     --secondary-color: #C4A484;
     --dark-color: #2A1A1F;
     --light-color: #F5F5F5;
@@ -72,7 +72,7 @@ ul {
 }
 
 .btn--primary:hover {
-    background-color: #24611e;
+    background-color: var(--primary-color-hover);
     transform: translateY(-2px);
     box-shadow: var(--shadow);
 }
@@ -137,7 +137,7 @@ ul {
 }
 
 .logo:hover {
-    color: red;
+    color: var(--primary-color-hover);
 }
 
 .nav__list {
@@ -198,7 +198,7 @@ ul {
     left: 0px;
     padding: 80px;
     gap: 30px;
-    background: white;
+    background: var(--white-color);
     height: 100%;
     box-shadow: 0px 0px 10px black;
     font-size: 20px;
@@ -213,7 +213,7 @@ ul {
 #burger-menu-close {
     all: unset;
     margin-top: 20px;
-    color: #07bb43;
+    color: var(--primary-color);
     cursor: pointer;
     font-weight: 800;
 }
@@ -260,52 +260,67 @@ ul {
 }
 
 /* О нас */
-.about {
-    padding: 80px 0;
+.advantages {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px;
 }
 
-.about__inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-}
-
-.about__image {
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-}
-
-.about__image img {
+.slider-elements {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: var(--transition);
+    height: 320px;
+    display: flex;
+    overflow: hidden;
+    gap: 20%;
 }
 
-.about__image:hover img {
-    transform: scale(1.05);
+.slider-elements img {
+    max-width: 450px;
 }
 
-.about__text {
-    margin-bottom: 20px;
+.element {
+    display: flex;
+    min-width: 100%;
+    position: relative;
+    transition: 1s;
 }
 
-.about__features {
-    margin-top: 30px;
+.element figcaption {
+    padding: 114px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    text-align: center;
+    justify-content: center;
 }
 
-.feature-item {
+figcaption h2 {
+    font-size: 56px;
+    font-weight: 600;
+}
+
+.buttons {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    justify-content: center;
+    margin-top: 50px;
 }
 
-.feature-icon {
-    margin-right: 15px;
+.buttons button {
+    background: none;
+    padding: 20px;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
     color: var(--primary-color);
-    font-size: 1.2rem;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 /* Аренда сервера */
@@ -624,12 +639,16 @@ ul {
         font-size: 1.3rem;
     }
     
-    .about__inner {
-        grid-template-columns: 1fr;
+    .element img {
+        max-width: 200px;
     }
-    
-    .about__image {
-        order: -1;
+
+    .element__description h2 {
+        font-size: 2rem;
+    }
+
+    .element__description p {
+        font-size: 0.9rem;
     }
 }
 
@@ -683,6 +702,10 @@ ul {
         gap: 15px;
     }
     
+    .element img {
+        display: none;
+    }
+
     .contacts__inner {
         grid-template-columns: 1fr;
     }
@@ -705,7 +728,15 @@ ul {
         font-size: 1.1rem;
     }
     
-    .menu__tabs {
-        flex-direction: column;
+    .element__description h2 {
+        font-size: 1.5rem;
     }
+
+    .element__description p {
+        font-size: 0.6rem;
+    }
+
+/*     .menu__tabs {
+        flex-direction: column;
+    } */
 }
