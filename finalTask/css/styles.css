@@ -4,7 +4,7 @@
 :root {
     --primary-color: #07bb43;
     --primary-color-hover: #cecb24;
-    --secondary-color: #C4A484;
+    --secondary-color: #841788;
     --dark-color: #2A1A1F;
     --light-color: #F5F5F5;
     --white-color: #FFFFFF;
@@ -373,7 +373,7 @@ figcaption h2 {
 }
 
 .rent__grid img {
-    max-width: 200px;
+    max-width: 150px;
 }
 
 .rent-item {
@@ -391,27 +391,36 @@ figcaption h2 {
 .rent-item__country {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
+}
+
+.rent-item__country img {
+    border: 3px outset black;
+    border-radius: 10%;
 }
 
 .rent-item__header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 .rent-item__title {
-    font-size: 1.2rem;
-    color: var(--primary-color);
+    font-size: 1.7rem;
+    color: var(--secondary-color);
 }
 
 .rent-item__price {
+    font-size: 1.1rem;
     font-weight: 700;
     color: var(--dark-color);
+    text-align: center;
 }
 
 .rent-item__description {
     color: var(--gray-color);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 /* Отзывы */
@@ -736,7 +745,7 @@ figcaption h2 {
         font-size: 0.6rem;
     }
 
-/*     .menu__tabs {
+    .rent__tabs {
         flex-direction: column;
-    } */
+    }
 }
