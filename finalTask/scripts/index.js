@@ -40,31 +40,32 @@ navLinks[4].addEventListener("click", (e) => {
 })
 
 /* Переход по ссылкам навигации бургер-меню */
-navLinks[5].addEventListener("click", (e) => {
+const burgerLinks = document.querySelectorAll(".burger-menu a")
+burgerLinks[0].addEventListener("click", (e) => {
     e.preventDefault()
     const element = document.querySelector("#hero")
     element.scrollIntoView({ behavior: "smooth" })
     burgerMenu.classList.remove("burger-menu-open")
 })
-navLinks[6].addEventListener("click", (e) => {
+burgerLinks[1].addEventListener("click", (e) => {
     e.preventDefault()
     const element = document.querySelector("#advantages")
     element.scrollIntoView({ behavior: "smooth" })
     burgerMenu.classList.remove("burger-menu-open")
 })
-navLinks[7].addEventListener("click", (e) => {
+burgerLinks[2].addEventListener("click", (e) => {
     e.preventDefault()
     const element = document.querySelector("#rent")
     element.scrollIntoView({ behavior: "smooth" })
     burgerMenu.classList.remove("burger-menu-open")
 })
-navLinks[8].addEventListener("click", (e) => {
+burgerLinks[3].addEventListener("click", (e) => {
     e.preventDefault()
     const element = document.querySelector("#reviews")
     element.scrollIntoView({ behavior: "smooth" })
     burgerMenu.classList.remove("burger-menu-open")
 })
-navLinks[9].addEventListener("click", (e) => {
+burgerLinks[4].addEventListener("click", (e) => {
     e.preventDefault()
     const element = document.querySelector("#contacts")
     element.scrollIntoView({ behavior: "smooth" })
@@ -96,4 +97,37 @@ buttons.forEach((btn, index) => {
             el.style.left = -index * 120 + "%"
         }
     })
+})
+
+/* Переход по ссылкам навигации футера */
+const footerLinks = document.querySelectorAll(".footer__nav a")
+footerLinks[0].addEventListener("click", (e) => {
+    e.preventDefault()
+    const element = document.querySelector("#hero")
+    element.scrollIntoView({ behavior: "smooth" })
+    burgerMenu.classList.remove("burger-menu-open")
+})
+footerLinks[1].addEventListener("click", (e) => {
+    e.preventDefault()
+    const element = document.querySelector("#advantages")
+    element.scrollIntoView({ behavior: "smooth" })
+    burgerMenu.classList.remove("burger-menu-open")
+})
+footerLinks[2].addEventListener("click", (e) => {
+    e.preventDefault()
+    const element = document.querySelector("#rent")
+    element.scrollIntoView({ behavior: "smooth" })
+    burgerMenu.classList.remove("burger-menu-open")
+})
+footerLinks[3].addEventListener("click", (e) => {
+    e.preventDefault()
+    const element = document.querySelector("#reviews")
+    element.scrollIntoView({ behavior: "smooth" })
+    burgerMenu.classList.remove("burger-menu-open")
+})
+footerLinks[4].addEventListener("click", (e) => {
+    e.preventDefault()
+    const element = document.querySelector("#contacts")
+    element.scrollIntoView({ behavior: "smooth" })
+    burgerMenu.classList.remove("burger-menu-open")
 })
