@@ -25,7 +25,7 @@ navLinks[1].addEventListener("click", (e) => {
 })
 navLinks[2].addEventListener("click", (e) => {
     e.preventDefault()
-    const element = document.querySelector("#menu")
+    const element = document.querySelector("#rent")
     element.scrollIntoView({ behavior: "smooth" })
 })
 navLinks[3].addEventListener("click", (e) => {
@@ -54,7 +54,7 @@ navLinks[6].addEventListener("click", (e) => {
 })
 navLinks[7].addEventListener("click", (e) => {
     e.preventDefault()
-    const element = document.querySelector("#menu")
+    const element = document.querySelector("#rent")
     element.scrollIntoView({ behavior: "smooth" })
     burgerMenu.classList.remove("burger-menu-open")
 })
