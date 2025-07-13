@@ -70,3 +70,16 @@ navLinks[9].addEventListener("click", (e) => {
     element.scrollIntoView({ behavior: "smooth" })
     burgerMenu.classList.remove("burger-menu-open")
 })
+
+/* Переход по кнопкам в hero */
+const heroButtons = document.querySelectorAll(".hero__buttons a")
+heroButtons[0].addEventListener("click", (e) => {
+    e.preventDefault()
+    const element = document.querySelector("#rent")
+    element.scrollIntoView({ behavior: "smooth" })
+})
+heroButtons[1].addEventListener("click", (e) => {
+    e.preventDefault()
+    const element = document.querySelector("#contacts")
+    element.scrollIntoView({ behavior: "smooth" })
+})
