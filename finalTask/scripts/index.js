@@ -12,64 +12,25 @@ burgerMenuClose.addEventListener("click", () => {
 })
 
 /* Переход по ссылкам основной навигации */
+const links = ["#hero", "#advantages", "#rent", "#reviews", "#contacts"]
 const navLinks = document.querySelectorAll("nav a")
-navLinks[0].addEventListener("click", (e) => {
-    e.preventDefault()
-    const element = document.querySelector("#hero")
-    element.scrollIntoView({ behavior: "smooth" })
-})
-navLinks[1].addEventListener("click", (e) => {
-    e.preventDefault()
-    const element = document.querySelector("#advantages")
-    element.scrollIntoView({ behavior: "smooth" })
-})
-navLinks[2].addEventListener("click", (e) => {
-    e.preventDefault()
-    const element = document.querySelector("#rent")
-    element.scrollIntoView({ behavior: "smooth" })
-})
-navLinks[3].addEventListener("click", (e) => {
-    e.preventDefault()
-    const element = document.querySelector("#reviews")
-    element.scrollIntoView({ behavior: "smooth" })
-})
-navLinks[4].addEventListener("click", (e) => {
-    e.preventDefault()
-    const element = document.querySelector("#contacts")
-    element.scrollIntoView({ behavior: "smooth" })
+navLinks.forEach((link, n) => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault()
+        const element = document.querySelector(links[n])
+        element.scrollIntoView({ behavior: "smooth" })
+    })
 })
 
 /* Переход по ссылкам навигации бургер-меню */
 const burgerLinks = document.querySelectorAll(".burger-menu a")
-burgerLinks[0].addEventListener("click", (e) => {
-    e.preventDefault()
-    const element = document.querySelector("#hero")
-    element.scrollIntoView({ behavior: "smooth" })
-    burgerMenu.classList.remove("burger-menu-open")
-})
-burgerLinks[1].addEventListener("click", (e) => {
-    e.preventDefault()
-    const element = document.querySelector("#advantages")
-    element.scrollIntoView({ behavior: "smooth" })
-    burgerMenu.classList.remove("burger-menu-open")
-})
-burgerLinks[2].addEventListener("click", (e) => {
-    e.preventDefault()
-    const element = document.querySelector("#rent")
-    element.scrollIntoView({ behavior: "smooth" })
-    burgerMenu.classList.remove("burger-menu-open")
-})
-burgerLinks[3].addEventListener("click", (e) => {
-    e.preventDefault()
-    const element = document.querySelector("#reviews")
-    element.scrollIntoView({ behavior: "smooth" })
-    burgerMenu.classList.remove("burger-menu-open")
-})
-burgerLinks[4].addEventListener("click", (e) => {
-    e.preventDefault()
-    const element = document.querySelector("#contacts")
-    element.scrollIntoView({ behavior: "smooth" })
-    burgerMenu.classList.remove("burger-menu-open")
+burgerLinks.forEach((link, n) => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault()
+        const element = document.querySelector(links[n])
+        element.scrollIntoView({ behavior: "smooth" })
+        burgerMenu.classList.remove("burger-menu-open")
+    })
 })
 
 /* Переход по кнопкам в hero */
@@ -101,28 +62,10 @@ buttons.forEach((btn, index) => {
 
 /* Переход по ссылкам навигации футера */
 const footerLinks = document.querySelectorAll(".footer__nav a")
-footerLinks[0].addEventListener("click", (e) => {
-    e.preventDefault()
-    const element = document.querySelector("#hero")
-    element.scrollIntoView({ behavior: "smooth" })
-})
-footerLinks[1].addEventListener("click", (e) => {
-    e.preventDefault()
-    const element = document.querySelector("#advantages")
-    element.scrollIntoView({ behavior: "smooth" })
-})
-footerLinks[2].addEventListener("click", (e) => {
-    e.preventDefault()
-    const element = document.querySelector("#rent")
-    element.scrollIntoView({ behavior: "smooth" })
-})
-footerLinks[3].addEventListener("click", (e) => {
-    e.preventDefault()
-    const element = document.querySelector("#reviews")
-    element.scrollIntoView({ behavior: "smooth" })
-})
-footerLinks[4].addEventListener("click", (e) => {
-    e.preventDefault()
-    const element = document.querySelector("#contacts")
-    element.scrollIntoView({ behavior: "smooth" })
+footerLinks.forEach((link, n) => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault()
+        const element = document.querySelector(links[n])
+        element.scrollIntoView({ behavior: "smooth" })
+    })
 })
