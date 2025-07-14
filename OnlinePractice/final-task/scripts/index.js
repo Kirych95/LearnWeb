@@ -1,32 +1,40 @@
+const buttons = document.querySelectorAll(".slider__pagination button")
+const elements = document.querySelectorAll(".element")
+const nav = document.querySelectorAll("nav a")
 
-
-
-/* const elements = document.querySelectorAll(".element")
-const buttons = document.querySelectorAll(".buttons button")
-
-buttons.forEach((btn, index) => {
-    btn.addEventListener("click", () => {
-        buttons.forEach((btn) => btn.style.borderBottom = "")
-        btn.style.borderBottom = "2px solid var(--text-color)"
-        for (let el of elements) {
-            el.style.left = -index * 120 + "%"
-        }
+const links = ["#slider", "#guide-trails", "#our-services"]
+nav.forEach((link, n) => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault()
+        const element = document.querySelector(links[n])
+        element.scrollIntoView({ behavior: "smooth" })
     })
 })
 
-const navLinks = document.querySelectorAll("nav a")
-navLinks[0].addEventListener("click", (e) => {
-    e.preventDefault()
-    const element = document.querySelector("#abouts-us-header")
+/* nav[0].addEventListener("click", (event) => {
+    event.preventDefault()
+    const element = document.querySelector("#slider")
     element.scrollIntoView({ behavior: "smooth" })
 })
-navLinks[1].addEventListener("click", (e) => {
-    e.preventDefault()
-    const element = document.querySelector("#guide-and-trails-header")
+nav[1].addEventListener("click", (event) => {
+    event.preventDefault()
+    const element = document.querySelector("#guide-trails")
     element.scrollIntoView({ behavior: "smooth" })
 })
-navLinks[2].addEventListener("click", (e) => {
-    e.preventDefault()
-    const element = document.querySelector("#our-service-header")
+nav[2].addEventListener("click", (event) => {
+    event.preventDefault()
+    const element = document.querySelector("#our-services")
     element.scrollIntoView({ behavior: "smooth" })
 }) */
+
+buttons.forEach((button, n) => {
+    button.addEventListener("click", () => {
+        for (let element of elements) {
+            element.style.left = -130 * n + "%"
+        }
+        for (let button of buttons) {
+            button.style.opacity = "0.5"
+        }
+        button.style.opacity = "1"
+    })
+})

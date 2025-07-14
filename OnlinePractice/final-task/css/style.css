@@ -118,7 +118,8 @@ header {
     margin: 120px auto;
 }
 
-.guide-trails__header, .our-services__header {
+.guide-trails__header,
+.our-services__header {
     display: flex;
     flex-direction: column;
     gap: 23px;
@@ -136,7 +137,7 @@ header {
     width: 278px;
 }
 
-.guide__card figure{
+.guide__card figure {
     display: flex;
     flex-wrap: wrap;
     gap: 18px;
@@ -154,7 +155,8 @@ header {
     opacity: 0.44;
 }
 
-.guide-trails__trails, .guide-trails__guide {
+.guide-trails__trails,
+.guide-trails__guide {
     display: flex;
     flex-direction: column;
     gap: 56px;
@@ -226,3 +228,71 @@ main {
     flex-direction: column;
     gap: 150px;
 }
+
+.slider__elements {
+    max-width: 1462px;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    gap: 30%;
+}
+
+.element {
+    display: flex;
+    align-items: center;
+    gap: 114px;
+    position: relative;
+    transition: 1s;
+    min-width: 100%;
+}
+
+.element:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.element:nth-child(2n) .element__big-number {
+    left: unset;
+    right: 508px;
+}
+
+.element figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    margin-left: 150px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.element__big-number {
+    position: absolute;
+    left: 0;
+    top: 38px;
+    font-weight: bold;
+    font-size: 240px;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.slider__pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.slider__pagination button {
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--text-color);
+    color: var(--text-color);
+    opacity: 0.5;
+    font-weight: bold;
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
